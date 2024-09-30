@@ -12,7 +12,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=ABRA_A5;database=CoreProjeDB; integrated security=true; encryption=true");
+            optionsBuilder.UseSqlServer("server=ABRA_A5;database=CoreProjeDB;integrated security=true");
         }
 
         public DbSet<About> Abouts { get; set; }
